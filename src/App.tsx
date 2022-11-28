@@ -4,6 +4,8 @@ import './App.css';
 import styled from 'styled-components';
 import Title from "./components/Title";
 import Flex from "./components/Flex";
+import Console from './components/Console';
+import Button from './components/Button';
 
 const AppWrapper = styled.div`
   width: 100%;
@@ -18,6 +20,10 @@ function App() {
         <AppWrapper>
             <Flex justify={'center'}>
                 <Title color={'green'}> 32432535 </Title>
+            </Flex>
+            <Flex direction={'column'}>
+                <Console/>
+                <Button primary={'red'} radius={'25px'} self={'center'}> Send </Button>
             </Flex>
         </AppWrapper>
     );
