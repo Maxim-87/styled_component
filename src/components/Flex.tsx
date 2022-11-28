@@ -2,10 +2,11 @@ import React from 'react';
 import styled from "styled-components";
 
 interface InFlex {
-    direction: string,
-    items: string,
-    justify: string,
-    margin: number,
+    direction?: string,
+    items?: string,
+    justify?: string,
+    margin?: number,
+    children?: React.ReactNode
 }
 
 const StyledFlex = styled.div<InFlex>`
