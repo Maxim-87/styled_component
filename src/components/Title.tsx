@@ -2,20 +2,18 @@ import React from 'react';
 import styled, {StyledComponent} from "styled-components";
 
 
-const StyledTitle = styled.h1`
+const StyledTitle = styled.h1<InTitle>`
 color: ${props => props.color};  
 `
 
-interface Title {
+interface InTitle {
     children: string,
     color: string,
 }
 
-const Title = ({children, color}: Title) => {
+const Title = (prop: InTitle) => {
     return (
-        <StyledTitle color={color}>
-            {children}
-        </StyledTitle>
+        <StyledTitle {...prop}/>
     );
 };
 

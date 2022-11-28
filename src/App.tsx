@@ -16,7 +16,7 @@ background-color: antiquewhite;
 function App() {
   return (
     <AppWrapper>
-        <Title color={'blue'}> hjbjhbjbhj </Title>
+        <Title color={'green'}> 32432535 </Title>
     </AppWrapper>
   );
 }
