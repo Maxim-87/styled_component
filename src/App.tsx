@@ -23,7 +23,7 @@ function App() {
             </Flex>
             <Flex direction={'column'}>
                 <Console/>
-                <Button primary={'red'} radius={'25px'} self={'center'}> Send </Button>
+                <Button color={'red'} outlined radius={'25px'} self={'center'}> Send </Button>
             </Flex>
         </AppWrapper>
     );
